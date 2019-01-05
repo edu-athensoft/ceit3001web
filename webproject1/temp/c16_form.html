@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        .myform{
+            padding: 5px;
+            margin: 5px;
+        }
+    
+    </style>
+</head>
+<body>
+    <form action = "#" method = "GET">
+        <div class="myform">
+            <label>User Name</label>
+            <input type="text" width="60" placeholder="input your full name" name="username"/>   text
+        </div>
+
+        <div class="myform">
+            <label>Password</label>
+            <input type="password" width="60"  placeholder="0-9A-Za-z-_@" name="password"/>   password
+        </div>
+
+        <div class="myform">
+            <label>Re-entry Password</label>
+            <input type="password" width="60"  placeholder="0-9A-Za-z-_@" name="password2"/>   password
+        </div>
+
+        <div>
+            <label>Checkbox</label><br/>
+            <input type="checkbox" name="Mr" value="on"/> Mr.
+            <input type="checkbox" name="Mrs" value = "on"> Mrs.
+            <input type="checkbox" name="Dr" value = "on"> Dr.
+        </div>
+
+        <div>
+                <label>Radio</label><br/>
+                <input type="radio" name="gender" value="f" onchange="printValue();" id="r1"/> Female
+                <input type = "radio" name = "gender" value="m" onchange="printValue();" id="r2"> Male
+            </div>
+
+
+        <div class="myform">
+            <input type="submit" name="submit"/>
+        </div>
+
+            <div>
+        <select name = "dropdown">
+                <option value = "empty" selected>---choose one---</option>
+                <option value = "Maths">Maths</option>
+                <option value = "Physics">Physics</option>
+             </select>
+            </div>
+
+
+        <div>
+                <input type = "file" name = "fileupload" accept = "image/*" />
+        </div>
+
+        <div>
+                <input type = "reset" name = "reset"  value = "Reset" />
+        </div>
+
+        <div>
+                <input type = "button" name = "mybutton"  value = "Click me" onclick="clickMe();"/>
+        </div>
+
+        <div>
+                <input type = "hidden" name = "myid"  value = "122334" />
+        </div>
+        <textarea rows="6" cols="50" placeholder="input your comment">
+
+        </textarea>
+    </form>
+
+
+
+
+   
+
+    <script>
+        function printValue(){
+            if(document.getElementById("r1").checked){
+                var gender = document.getElementById("r1").value;
+                alert(gender);
+            }
+            if(document.getElementById("r2").checked){
+                var gender = document.getElementById("r2").value;
+                alert(gender);
+            }
+            
+            alert(gender);
+        }
+
+        function clickMe(){
+            alert("You have clicked this button");
+            location = "http://www.youtube.com";
+        }
+    
+    </script>
+    
+             
+</body>
+</html>
