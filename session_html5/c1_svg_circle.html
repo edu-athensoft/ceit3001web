@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>SVG</title>
+      <meta charset = "utf-8" />
+      <style>
+         #svgelem {
+            position: relative;
+            left: 50%;
+            -webkit-transform: translateX(-20%);
+            -ms-transform: translateX(-20%);
+            transform: translateX(-20%);
+         }
+      </style>
+      <script>
+         var svg = document.getElementById("svgelem");
+      </script>
+   </head>
+   
+   <body>
+      <h2>HTML5 SVG Circle</h2>
+		
+      <svg id = "svgelem" name="mysvg" height = "400" xmlns = "http://www.w3.org/2000/svg">
+         <circle id = "redcircle" cx = "0" cy = "0" r = "50" fill = "blue" />
+         <rect id = "redrect" width = "300" height = "100" fill = "blue" />
+         <polygon points = "100,10 40,180 190,60 10,60 160,180" fill = "yellow"/>
+      </svg>
+   </body>
+</html>
