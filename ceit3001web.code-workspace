@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "session_responsive"
+		},
+		{
+			"path": "demo"
 		}
 	]
 }
