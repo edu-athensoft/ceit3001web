@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "session_css"
+		},
+		{
+			"path": "session_js"
 		}
 	]
 }
