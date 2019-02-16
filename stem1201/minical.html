@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="minical2.js"></script>
+</head>
+<body>
+    <h1>My Mini Calculator</h1>
+    <input type="text" id="result" value="0" readonly style="text-align: right;"/>
+    <table>
+        <tr>
+            <td><button name="ac" onclick="reset();">AC</button></td>
+            <td><button name="sign" onclick="">+/-</button></td>
+            <td><button name="percent" onclick="">%</button></td>
+            <td><button name="divide" onclick="pressOperator('divide')">/</button></td>
+        </tr>
+        <tr>
+            <td><button name="i7" onclick="pressNumber(7);">7</button></td>
+            <td><button name="i8" onclick="pressNumber(8);">8</button></td>
+            <td><button name="i9" onclick="pressNumber(9);">9</button></td>
+            <td><button name="multiply" onclick="pressOperator('multiply')">*</button></td>
+        </tr>
+        <tr>
+            <td><button name="i4" onclick="pressNumber(4);">4</button></td>
+            <td><button name="i5" onclick="pressNumber(5);">5</button></td>
+            <td><button name="i6" onclick="pressNumber(6);">6</button></td>
+            <td><button name="minus" onclick="pressOperator('minus')">-</button></td>
+        </tr>
+        <tr>
+            <td><button name="i1" onclick="pressNumber(1);">1</button></td>
+            <td><button name="i2" onclick="pressNumber(2);">2</button></td>
+            <td><button name="i3" onclick="pressNumber(3);">3</button></td>
+            <td><button name="plus" onclick="pressOperator('plus')">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2" ><button name="i0" onclick="" style="width:60px">0</button></td>
+            <td><button name="dot" onclick="pressOperator('dot')">.</button></td>
+            <td><button name="equal" onclick="getResult()">=</button></td>
+        </tr>
+    </table>
+</body>
+</html>
