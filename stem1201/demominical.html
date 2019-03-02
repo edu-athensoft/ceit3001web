@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+
+    <style>
+        #result {
+            text-align: right;
+            font-size: 24px;
+            width: 128px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- displayer -->
+    <input type="text" name="result" id="result" value="0" readonly />
+
+    <!-- panel -->
+    <table>
+        <tr>
+            <td><button>AC</button></td>
+            <td><button>+/-</button></td>
+            <td><button>%</button></td>
+            <td><button>/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pressNumber(7);">7</button></td>
+            <td><button onclick="pressNumber(8);">8</button></td>
+            <td><button onclick="pressNumber(9);">9</button></td>
+            <td><button>/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pressNumber(4)">4</button></td>
+            <td><button onclick="pressNumber(5)">5</button></td>
+            <td><button onclick="pressNumber(6)">6</button></td>
+            <td><button>/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="pressNumber(1)">1</button></td>
+            <td><button onclick="pressNumber(2)">2</button></td>
+            <td><button onclick="pressNumber(3)">3</button></td>
+            <td><button onclick="pressNumber(999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)"">/</button></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button onclick="pressNumber(0)">&nbsp;&nbsp;&nbsp;0 ;&nbsp;&nbsp;&nbsp;</button></td>
+            <td><button>.</button></td>
+            <td><button >=</button></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
