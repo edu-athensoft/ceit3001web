@@ -1,0 +1,44 @@
+*{margin:0;padding:0}
+
+#header{
+    height:60px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;                         
+}
+
+#main{
+    margin-left: 40%;
+    margin-right: auto;
+    
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgb(43, 43, 44); 
+    border-radius: 50%;
+}
+
+button.operator{
+    background-color: rgb(228, 134, 13); 
+}
+
+input{
+    width: 250px;
+    height: 60px;
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(43, 43, 44);
+    color: whitesmoke;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding-right:3px;
+    
+}
+
