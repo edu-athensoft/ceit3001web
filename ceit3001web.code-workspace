@@ -13,7 +13,6 @@
 			"path": "session_css"
 		},
 		{
-<<<<<<< HEAD
 			"path": "stem1201"
 		},
 		{
@@ -21,9 +20,12 @@
 		},
 		{
 			"path": "demo"
-=======
+		},
+		{
 			"path": "session_js"
->>>>>>> e9c5038d0f2e3dc62892392f55d8c2fee7d10b98
+		},
+		{
+			"path": "myrpg"
 		}
 	]
 }
