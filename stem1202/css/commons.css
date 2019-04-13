@@ -4,7 +4,7 @@
     padding :  0px;
   }
 
-  body, html{
+body, html{
     width: 100%;
     height: 100%;
 }
@@ -26,4 +26,4 @@
     float: left;
     /* padding: 3px; */
     /* border: 1px solid red; */
-  }
+}
