@@ -1,7 +1,7 @@
 var myChar = {
     "charName" : "Johnanna",
     "charClass": "Magician",
-    "level"    :  0,
+    "charLevel"    :  0,
     "STR"      :   10,
     "DEX"      :   10,
     "INT"      :   10,

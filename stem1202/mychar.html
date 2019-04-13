@@ -9,8 +9,20 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/commons.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/mychar.css">
     <script src="./js/mychar.js"></script>
+
+    <script>
+        function showCharInfo(){
+            var charName = myChar.charName;
+            var charClass = myChar.charClass;
+            var charLevel = myChar.charLevel;
+            document.getElementById("charName").innerHTML=charName;
+            document.getElementById("charClass").innerHTML=charClass;
+            document.getElementById("charLevel").innerHTML=charLevel;
+        }
+    </script>
+
 </head>
-<body>
+<body onload="showCharInfo();">
     <!-- displayer to show how many points available you have-->
     <div id="header">    
         
@@ -19,14 +31,19 @@
     <!-- a table represents STR,DEX,INT,VIT initial number and adjustment buttons --> 
     <div id="charAttr">
         <div>
-            <img src="images/mychar-2.png" width="40px"/>
+            <img src="images/mychar-2.png" width="40px"/><br/>
+            <label>Character Name:&nbsp;&nbsp;<span id="charName"></span></label><br/>
+            <label>Character Class:&nbsp;&nbsp;<span id="charClass"></span></label><br/>
+            <label>Character Level:&nbsp;&nbsp;<span id="charLevel"></span></label>
+            <br/><br/>
         </div>
 
         <div id="main_attribute">
             <div id="point_displayer">
                     <input type="text" name="availablePoint" id="availablePoint" value="20" readonly/> Points
             </div>
-                
+            
+            <label>Main Attributes</label>
             <table>
                 <tr>
                     <td>STR</td>
@@ -55,40 +72,37 @@
                     <td><button name="btn_vitPlus" id="btn_vitPlus">+</button></td>
                 </tr>
             </table>
-
-            <table>
-                <tr>
-                    <td>PAD <input type="text" value="10" id="padPoint"/></td>
-                    <td>LAD <input type="text" value="10" id="ladPoint"/></td>
-                    <td>MAD <input type="text" value="10" id="madPoint"/></td>
-                </tr>
-                <tr>
-                    <td>PR <input type="text" value="10" id="prPoint"/></td>
-                    <td>MR <input type="text" value="10" id="mrPoint"/></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>HP <input type="text" value="10" id="hpPoint"/></td>
-                    <td>MP <input type="text" value="10" id="mpPoint"/></td>
-                    <td>SPD <input type="text" value="5" id="spdPoint"/></td>
-                </tr>
-            </table>
-
-            <div>
-                <button onclick="reset();" class="btn_mychar">Reset</button>
-                <button onclick="confirm();" class="btn_mychar">Confirm</button>
-            </div>
-        </div>
-
-        <div id="btn_attribute">
-
+            <br/><br/> 
         </div>
     </div>
 
     <!-- Confirm, Reset buttons-->
     <div id="charAttr2">
-
+        <label>Other Attributes</label>
+        <table>
+            <tr>
+                <td>PAD <input type="text" value="10" id="padPoint"/></td>
+                <td>LAD <input type="text" value="10" id="ladPoint"/></td>
+                <td>MAD <input type="text" value="10" id="madPoint"/></td>
+            </tr>
+            <tr>
+                <td>PR <input type="text" value="10" id="prPoint"/></td>
+                <td>MR <input type="text" value="10" id="mrPoint"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>HP <input type="text" value="10" id="hpPoint"/></td>
+                <td>MP <input type="text" value="10" id="mpPoint"/></td>
+                <td>SPD <input type="text" value="5" id="spdPoint"/></td>
+            </tr>
+        </table>
+        <br/><br/>
     </div>
  
+    <div id="btn_attribute">
+        <button onclick="reset();" class="btn_mychar">Reset</button>
+        <button onclick="confirm();" class="btn_mychar">Confirm</button>
+    </div>
+
 </body>
 </html>
