@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>Input type - password</h2>
+        <form method="GET">
+            User name:
+            <input type="text" name="username" readonly="readonly" value="my name"><br />
+            User password:
+            <input type="password" name="psw" required><br />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div>
+        <h2>Input type - radio box</h2>
+        <form method="GET">
+            <input type="radio" name="gender" value="male" checked="checked"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div>
+        <h2>Input type - check box</h2>
+        <form method="GET">
+            <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+            <input type="checkbox" name="vehicle2" value="Car"> I have a car<br />
+            <input type="checkbox" name="vehicle3" value="Truck" checked> I have a Truck<br>
+            <input type="checkbox" name="vehicle4" value="Scooter"> I have a Scooter<br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div>
+        <h2>Input type - color</h2>
+        <form method="GET">
+            Select your favorite color:
+            <input type="color" name="favcolor">
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div>
+        <h2>Input type - date</h2>
+        <form>
+            Birthday:
+            <input type="date" name="bday">
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div>
+        <h2>Input type - datetime local</h2>
+        <form>
+            Birthday datetime:
+            <input type="datetime-local" name="bdaytime">
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div>
+        <h2>Input type - email</h2>
+        <form>
+            email:
+            <input type="email" name="email">
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div>
+        <h2>Input type - file</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            Select a file: <input type="file" name="myFile">
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div>
+        <h2>Input type - Search Bar - Search Google</h2>
+        <form action="#" method="GET" >
+        <input type="search" name="googlesearch">
+        <input type="submit" value="Submit" />
+        </form>
+    </div>
+    
+    <div>
+        <h2> Tel</h2>
+        <form>
+                Telephone:
+                <input type="tel" name="phone" pattern="[1-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000"><br />
+                <input type="submit" value="Submit" />
+              </form>
+
+    </div>
+</body>
+
+</html>

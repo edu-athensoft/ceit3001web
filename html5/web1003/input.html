@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        select, input {
+            width: 200px;
+        }
+    </style>
+
+    <script>
+        function clickme(){
+            alert("hello world");
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form action="#" method="GET">
+                <input name="firstname" type="text" placeholder="input your firstname"> <br/><br/>
+                <input name="lastname" type="text" placeholder="input your lastname"> <br/><br/>
+                <select name="cars" size="4" multiple>
+                    <option value="0">--- Choose a car ---</option>
+                    <option value="1">abc1</option>
+                    <option value="2">abc2</option>
+                    <option value="3">abc3</option>
+                    <option value="4">abc4</option>
+                    <option value="5">abc5</option>
+                    <option value="6">abc6</option>
+                    <option value="7">abc7</option>
+                </select>
+                <br/>
+                <input type="button" name="mybutton" onclick="clickme();" value="click me"/>
+                <br/>
+                
+                <br/>
+                <input name="browser" type="text" placeholder="input your browser"><br/><br/>
+
+                <!-- html datalist -->
+                <input list="browsers" placeholder="input your browser">
+                <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                </datalist>
+                <br/> <br/> <br/>
+
+                <textarea rows="20" cols="40" placeholder="please write something here">
+                </textarea>
+                <br/>
+                <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+</html>
