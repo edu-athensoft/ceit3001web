@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* body {
+            background-color: aqua;
+        } */
+    </style>
+</head>
+<body>
+    <section>
+        <canvas id="myCanvas" width="400" height="300" style="border: 1px solid black"></canvas>canvas
+
+        <div><img src="CEIT4101-Python-0220.jpg" id="scream" width="200"/></div>canvas
+    </section>
+
+
+    <button onclick="myCanvas();">Try it</button>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        //draw a line
+        ctx.moveTo(20,20);
+        ctx.lineTo(200,200);
+        ctx.stroke();
+
+        ctx.moveTo(0,0);
+        ctx.lineTo(400,300);
+        ctx.stroke();
+
+        //draw a circle
+        ctx.beginPath();
+        ctx.arc(120,80,50,0,Math.PI/2)
+        ctx.stroke();
+
+        ctx.font = "30px Arial";
+        // ctx.fillText("Hello World", 40, 40);
+        ctx.strokeText("Hello World", 10, 50);
+
+        
+
+        function myCanvas(){
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            //draw an image
+            var img = document.getElementById("scream");
+            ctx.drawImage(img, 10, 10);
+        }
+        
+
+    </script>
+</body>
+</html>
