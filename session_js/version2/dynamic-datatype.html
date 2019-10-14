@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var a = 9;
+        console.log("a="+a+", type is "+ typeof a + " a is instance of number ?"+(new Number(a) instanceof Number));
+        
+        var str1 = "hello world";
+        console.log("str1="+str1+", typeof "+typeof str1+ "str1 instance of ?"+ (new String(str1) instanceof String))
+
+        function testme(){
+
+        }
+
+        console.log(typeof testme);
+
+        var obj = {
+            user : 'peter',
+            age : 25
+        };
+
+        console.log(typeof obj+"   null is "+typeof null)
+
+        var myarray = [1,2,3,4]
+        console.log(typeof myarray)
+
+        console.log("undefined is "+typeof undefined)
+
+        console.log(undefined == null)
+        console.log(undefined === null)
+    </script>
+</head>
+<body>
+</body>
+</html>
