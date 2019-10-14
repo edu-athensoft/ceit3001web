@@ -1,46 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "session_html5"
-		},
-		{
-			"path": "session_html4"
-		},
-		{
-			"path": "webproject1"
-		},
-		{
-			"path": "session_css"
-		},
-		{
-			"path": "stem1201"
-		},
-		{
-			"path": "session_responsive"
-		},
-		{
-			"path": "demo"
-		},
-		{
-			"path": "session_js"
-		},
-		{
-			"path": "myrpg"
-		},
-		{
-			"path": "stem1202"
-		},
-		{
-			"path": "html5"
-		},
-		{
-			"path": "web3001"
-		},
-		{
-			"path": "web1004"
-		},
-		{
-			"path": "interview"
+			"name": "ceit3001web",
+			"path": "."
 		}
 	]
 }
