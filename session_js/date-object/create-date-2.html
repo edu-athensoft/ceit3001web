@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div id="seven-number"></div>
+      <div id="six-number"></div>
+      <div id="five-number"></div>
+      <div id="four-number"></div>
+      <div id="three-number"></div>
+      <div id="two-number"></div>
+      <div id="one-number"></div>
+    </section>
+
+    <script>
+      var date = new Date(2019, 11, 24, 10, 33, 30, 0);
+      document.getElementById("seven-number").innerHTML = date;
+
+      date = new Date(2019, 11, 24, 10, 33, 30);
+      document.getElementById("six-number").innerHTML = date;
+
+      date = new Date(2019, 11, 24, 10, 33);
+      document.getElementById("five-number").innerHTML = date;
+
+      date = new Date(2019, 11, 24, 10);
+      document.getElementById("four-number").innerHTML = date;
+
+      date = new Date(2019, 11, 24);
+      document.getElementById("three-number").innerHTML = date;
+
+      date = new Date(2019, 11);
+      document.getElementById("two-number").innerHTML = date;
+
+      date = new Date(2019);
+      document.getElementById("one-number").innerHTML = date;
+    </script>
+  </body>
+</html>
