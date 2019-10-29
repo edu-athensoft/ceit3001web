@@ -1,4 +1,3 @@
-Result Size: 437 x 810
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,15 +5,28 @@ Result Size: 437 x 810
       .nav {
         background-color: yellow;
         list-style-type: none;
-        text-align: center;
+        /*text-align: center;*/
         margin: 0;
         padding: 0;
       }
-      ​ .nav li {
+
+      .myul {
+        background-color: yellow;
+        list-style-type: none;
+        /*text-align: center;*/
+        margin: 0;
+        padding: 0;
+      }
+
+      ​ .myul li {
+        display: inline-block;
+      }
+
+      /* .myli{
         display: inline-block;
         font-size: 20px;
         padding: 20px;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -28,14 +40,25 @@ Result Size: 437 x 810
       Note: If you resize the browser window, the links will automatically break
       when it becomes too crowded.
     </p>
-    ​
+    
+
     <ul class="nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#clients">Our Clients</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li class="myli"><a href="#home">Home</a></li>
+      <li class="myli"><a href="#about">About Us</a></li>
+      <li class="myli"><a href="#clients">Our Clients</a></li>
+      <li class="myli"><a href="#contact">Contact Us</a></li>
     </ul>
-    ​
+
+    <br/><br/>
+
+
+    <ul class="myul">
+      <li>aaaa</li>
+      <li>bbb</li>
+      <li>ccc</li>
+      <li>ddd</li>
+    </ul>
+
   </body>
 </html>
 ​
