@@ -34,7 +34,10 @@
             document.getElementById("mydate2").innerHTML = mydate2;
             endTime = mydate2.getTime();
             
-            var diff = getDuration(startTime, endTime);
+            // var diff = getDuration(startTime, endTime);
+            var diff = endTime - startTime;
+            startTime = endTime;
+
             document.getElementById("duration-ms").innerHTML = diff;
             document.getElementById("duration-s").innerHTML = diff/1000;
 
