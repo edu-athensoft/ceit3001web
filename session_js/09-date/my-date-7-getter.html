@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="mydate"></div>
+
+    <table>
+            <tr><th>Getter Method</th><th>Value</th></tr>
+    
+            <tr><td>getFullYear()</td><td><span id="getFullYear"></span></td></tr>
+            <tr><td>getMonth()</td><td><span id="getMonth"></span></td></tr>
+            <tr><td>getDate()</td><td><span id="getDate"></span></td></tr>
+            <tr><td>getHours()</td><td><span id="getHours"></span></td></tr>
+            <tr><td>getMinutes()</td><td><span id="getMinutes"></span></td></tr>
+            <tr><td>getSeconds()</td><td><span id="getSeconds"></span></td></tr>
+            <tr><td>getMilliseconds()</td><td><span id="getMilliseconds"></span></td></tr>
+            <tr><td>getDay()</td><td><span id="getDay"></span></td></tr>
+    
+            <tr><td>getTime()</td><td><span id="getTime"></span></td></tr>
+        </table>
+    
+        <script>
+            var mydate = new Date();
+            document.getElementById("mydate").innerHTML = mydate;
+    
+            document.getElementById("getFullYear").innerHTML = mydate.getFullYear();
+            document.getElementById("getMonth").innerHTML = mydate.getMonth();
+            document.getElementById("getDate").innerHTML = mydate.getDate();
+    
+            document.getElementById("getHours").innerHTML = mydate.getHours();
+            document.getElementById("getMinutes").innerHTML = mydate.getMinutes();
+            document.getElementById("getSeconds").innerHTML = mydate.getSeconds();
+            document.getElementById("getMilliseconds").innerHTML = mydate.getMilliseconds();
+            document.getElementById("getDay").innerHTML = mydate.getDay();
+    
+            document.getElementById("getTime").innerHTML = mydate.getTime();
+            
+        </script>
+</body>
+
+</html>

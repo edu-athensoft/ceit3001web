@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Date 3</title>
+
+</head>
+
+<body>
+    <h4>Date String</h4>
+    <div id="mydate"></div>
+    <div id="mydate2"></div>
+    <div id="mydate3"></div>
+    <div id="mydate4"></div>
+
+    <h4>ISO</h4>
+    <div id="mydate-iso"></div>
+    <div id="mydate-iso2"></div>
+    <div id="mydate-iso3"></div>
+    <div id="mydate-iso4"></div>
+    <div id="mydate-iso5"></div>
+
+    <h4>Short Date</h4>
+    <div id="mydate-sd"></div>
+
+    <h4>Long Date</h4>
+    <div id="mydate-ld"></div>
+
+    <script>
+        // October 13, 2014 11:13:00
+        var mydate = new Date("November 7, 2019 14:24:00");
+        document.getElementById("mydate").innerHTML = mydate;
+
+        var mydate2 = new Date("Nov 7, 2019 14:24:00");
+        document.getElementById("mydate2").innerHTML = mydate2;
+
+        var mydate3 = new Date("Thu Nov 7, 2019 14:24:00");
+        document.getElementById("mydate3").innerHTML = mydate3;
+
+        var mydate4 = new Date("Thu Nov 7, 2019 14:24:00.888");
+        document.getElementById("mydate4").innerHTML = mydate4;
+
+        var mydate5 = new Date("2019-11-7");
+        document.getElementById("mydate-iso").innerHTML = mydate5.toUTCString();
+
+        var mydate6 = new Date("2019-11");
+        document.getElementById("mydate-iso2").innerHTML = mydate6.toUTCString();
+
+        var mydate7 = new Date("2019");
+        document.getElementById("mydate-iso3").innerHTML = mydate7.toUTCString();
+
+        var mydate8 = new Date("2019-11-07T14:57:00Z");
+        document.getElementById("mydate-iso4").innerHTML = mydate8.toUTCString();
+
+        var mydate9 = new Date("2019-11-07T14:57:00-05:00");
+        document.getElementById("mydate-iso5").innerHTML = mydate9.toUTCString();
+
+        var mydate10 = new Date("11/07/2019");
+        document.getElementById("mydate-sd").innerHTML = mydate10.toString();
+
+        var mydate11 = new Date("Nov 07 2019");
+        document.getElementById("mydate-ld").innerHTML = mydate10.toString();
+
+    </script>
+</body>
+
+</html>

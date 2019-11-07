@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="mydate1">Starting Time</div>
+    <div id="mydate2">Stopping Time</div>
+    <div >Escaped Time: <span id="duration-ms"></span> ms</div>
+    <div >Escaped Time: <span id="duration-s"></span> s</div>
+
+    <button name="btn-stop1" onclick="doStart();">Start</button>
+    <button name="btn-stop2" onclick="doStop();">Stop</button>
+
+    <script>
+
+        var startTime = 0;
+        var endTime = 0;
+
+        function doStart(){
+            var mydate1 = new Date();
+            document.getElementById("mydate1").innerHTML = mydate1;
+            startTime = mydate1.getTime();
+        }
+
+        function doStop(){
+            var mydate2 = new Date();
+            document.getElementById("mydate2").innerHTML = mydate2;
+            endTime = mydate2.getTime();
+            
+            var diff = getDuration(startTime, endTime);
+            document.getElementById("duration-ms").innerHTML = diff;
+            document.getElementById("duration-s").innerHTML = diff/1000;
+
+        }
+
+        function getDuration(start, end){
+            return end-start;
+        }
+
+    </script>
+</body>
+
+</html>
