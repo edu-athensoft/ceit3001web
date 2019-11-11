@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Date 2</title>
+
+</head>
+
+<body>
+    <div id="mydate7"></div>
+    <div id="mydate6"></div>
+    <div id="mydate5"></div>
+    <div id="mydate4"></div>
+    <div id="mydate3"></div>
+    <div id="mydate2"></div>
+    <br />
+    <div id="previous-centray-1"></div>
+    <div id="previous-centray-2"></div>
+
+    <script>
+        // var mydate = new Date();
+        var mydate7 = new Date(2019,10,7,14,10,20,0);    //7 params
+        var mydate6 = new Date(2019,10,7,14,10,20);      //6 params
+        var mydate5 = new Date(2019,10,7,14,10);      //5 params
+        var mydate4 = new Date(2019,10,7,14);      //4 params
+        var mydate3 = new Date(2019,10,7);      //3 params
+        var mydate2 = new Date(2019,10);      //2 params
+
+        var precentrary1= new Date(99,11,1);
+        var precentrary2= new Date(9,11,1);
+
+        document.getElementById("mydate7").innerHTML = mydate7;
+        document.getElementById("mydate6").innerHTML = mydate6;
+        document.getElementById("mydate5").innerHTML = mydate5;
+        document.getElementById("mydate4").innerHTML = mydate4;
+        document.getElementById("mydate3").innerHTML = mydate3;
+        document.getElementById("mydate2").innerHTML = mydate2;
+
+        document.getElementById("previous-centray-1").innerHTML = precentrary1;
+        document.getElementById("previous-centray-2").innerHTML = precentrary2;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Date 4</title>
+
+</head>
+
+<body>
+    <div id="mydate"></div>
+    <div id="mydate2"></div>
+    <div id="mydate3"></div>
+
+    <script>
+        var mydate = new Date(1600000000000);
+        document.getElementById("mydate").innerHTML = mydate;
+
+        var mydate2 = new Date(-1600000000000);
+        document.getElementById("mydate2").innerHTML = mydate2;
+
+        var mydate3 = new Date(86400000);
+        document.getElementById("mydate3").innerHTML = mydate3;
+    </script>
+</body>
+
+</html>
