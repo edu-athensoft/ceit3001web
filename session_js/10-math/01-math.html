@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/style/athensoft.css"
+    />
+    <style>
+      section {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 500px;
+      }
+
+      .result {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 22px;
+        color: red;
+      }
+
+      input,
+      button {
+        /* margin: 0; */
+        padding: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        vertical-align: top;
+      }
+
+      input {
+        height: 26px;
+      }
+
+      button {
+        width: 80px;
+        height: 28px;
+      }
+
+      div {
+        font-size: 20px;
+      }
+
+      input#number-a{
+        width: 140px;
+      }
+
+      input#number-n{
+        width: 95px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      CEIT3001 Web Design and Programming I
+    </header>
+
+    <section>
+      <div><h1>JavaScript Math Object</h1></div>
+      <div>
+        <h4>Math.round(n)</h4>
+        <input type="text" id="number" placeholder="input a float number" />
+        <button onclick="testRound();">Go</button>
+        <br />
+        <span class="result" id="test-round"></span>
+      </div>
+
+      <div>
+        <h4>Math.pow(a,n)</h4>
+        <input type="text" id="number-a" placeholder="base" />
+        <input type="text" id="number-n" placeholder="exp" />
+        <button onclick="testPow();">Go</button>
+        <br />
+        <span class="result" id="test-pow"></span>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2019 Copyright. Informatique Athensoft Inc.
+      &nbsp;&nbsp;&nbsp;&nbsp; Athensoft Open-Minded Learning
+    </footer>
+
+    <script src="math.js"></script>
+  </body>
+</html>
