@@ -56,13 +56,42 @@ function str2num() {
 function unaryPlus() {
   var y = "5";
   var x = +y;
-  document.getElementById("demo").innerHTML = typeof y + "<br>" + typeof x;
+  document.getElementById("demo-unary").innerHTML =
+    typeof y + "<br>" + typeof x;
 }
 
 function unaryPlus2() {
   var y = "John";
   var x = +y;
-  document.getElementById("demo").innerHTML = typeof x + "<br>" + x;
+  document.getElementById("demo-unary2").innerHTML = typeof x + "<br>" + x;
+}
+
+function bool2num() {
+  Number(false); // returns 0
+  Number(true); // returns 1
+}
+
+function date2num() {
+  d = new Date();
+  Number(d); // returns 1404568027739
+  d.getTime();
+}
+
+function autoConversion() {
+  document.getElementById("demo").innerHTML =
+    5 +
+    null +
+    "<br>" +
+    ("5" + null) +
+    "<br>" +
+    ("5" + 2) +
+    "<br>" +
+    ("5" - 2) +
+    "<br>" +
+    "5" * "2" +
+    "<br>" +
+    "5" / "2" +
+    "<br>";
 }
 
 test();
