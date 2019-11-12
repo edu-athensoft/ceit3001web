@@ -1,0 +1,8 @@
+
+function forLoopOverArray(){
+
+}
+
+function forLoopOverString(){
+    
+}
