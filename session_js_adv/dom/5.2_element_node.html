@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+<p id="p3">This is another paragraph2.</p>
+</div>
+
+<script>
+var ele = document.createElement("p");  // create a new element
+var node = document.createTextNode("This is new."); // create a new node
+ele.appendChild(node); // append node to element
+var oldEle = document.getElementById("div1"); // find an existing element
+oldEle.appendChild(ele); //append new element to old element
+
+
+var child1 = document.getElementById("p1"); // find an existing element
+child1.remove(); // remove the existing element
+
+
+var parent = document.getElementById("div1"); // find parent element
+var child2 = document.getElementById("p2"); // find child element
+parent.removeChild(child1); // remove child element from the parent
+
+
+var child3 = document.getElementById("p3"); // find child element
+parent.replace(ele,child3); // replace element
+</script>
+
+</body>
+</html>
