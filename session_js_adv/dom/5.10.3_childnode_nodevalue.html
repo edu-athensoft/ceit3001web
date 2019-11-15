@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="0">Paragraph</p>
+        <p id="1"></p>
+        <p id="2"></p>
+
+        <script>
+            document.getElementById("1").innerHTML=document.getElementById("0");
+            document.childNodes[1].nodeValue = document.getElementById("0");
+            document.lastChild.nodeValue = document.getElementById("0");
+
+        </script>
+
+    </body>
+</html>
