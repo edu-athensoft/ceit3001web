@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+        <body>
+                <div id="div1">
+                        <p id="p1">This is a paragraph.</p>
+                        <p id="p2">This is another paragraph.</p>
+                        <p id="p3">This is another paragraph2.</p>
+                </div>
+                        
+                <script>
+                        var ele = document.createElement("p");  // create a new <p> element
+                        var textNode = document.createTextNode("This is new.");  // text node value 
+                        ele.appendChild(textNode);  // let text node to be child node of <p> element
+
+                        var parent = document.getElementById("div1");
+                        var child = document.getElementById("p1");
+                        parent.replaceChild(ele,child);  // replace p1 with new element
+                </script>
+                        
+        
+        
+        </body>
+
+</html>
