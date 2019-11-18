@@ -22,7 +22,7 @@ function testForOf() {
     }
 }
 
-function testForOfString(){
+function testForOfString() {
     var str = "hello";
     var x;
 
