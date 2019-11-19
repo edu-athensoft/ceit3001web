@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        img {
+            width: 200px;
+            height: 160px;
+        }
+    </style>
+</head>
 <body>
+    <p id="p1">Hello World!</p>
+    <img id="im" src="pic-1.jpg"><br/>
+    <button onclick="testInnerHTML();">testInnerHTML</button><br/>
+    <button onclick="testChangeAttribute();">testChangeAttribute</button><br/>
+    <button onclick="testChangeStyle();">testChangeStyle</button><br/>
+    <button onclick="testChangeAttribute();">testChangeAttribute</button><br/>
+    <button onclick="changeImageSize();">changeImageSize</button><br/>
+    <button onclick="addNewAttribute();">addNewAttribute</button><br/>
+    
 
-<p id ="p1">Hello World!</p>
-<img id="im" src="img1.gif">
+    <script>
+        document.write(Date()) // change HTML ouput stream
+                
+        
+        function testInnerHTML(){
+            // change HTML content
+            document.getElementById("p1").innerHTML = "new paragraph"; 
+        }
 
-<script>
-document.write(Date()) // change HTML ouput stream
-document.getElementById("p1").innerHTML="new paragraph"; // change HTML content
-document.getElementById("im1").src="img2.gif"; // change the value of an attribute
-document.getElementById("p1").style.color="blue"; // change HTML style
-document.getElementById("im").setAttribute("src","img3.gif"); // use method to change attribute value
+        function testChangeAttribute(){
+            // change the value of an attribute
+            document.getElementById("im").src = "pic-2.jpg"; 
+        }
 
-</script>
+        function testChangeStyle(){
+            // change HTML style
+            document.getElementById("p1").style.color = "blue"; 
+        }
 
+        function testChangeAttribute()  {
+            // use method to change attribute value
+            document.getElementById("im").setAttribute("src", "pic-3.jpg"); 
+        }
+
+        function changeImageSize(){
+            document.getElementById("im").style.width = "300px";
+            
+            //or 
+            // var x = document.getElementById("im");
+            // x.setAttribute("style","width:300px");
+
+        }
+
+        function addNewAttribute(){
+            // document.getElementById("im").style.width = "300px";
+            var x = document.getElementById("im");
+            console.log(x);
+
+            // console.log(x.getAttribute("width"));
+            x.setAttribute("data","300em");
+            console.log(x.getAttribute("data"));
+        }
+        
+    </script>
 </body>
 </html>
