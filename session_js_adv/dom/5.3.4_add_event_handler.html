@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <p id="demo"></p>
-        <script>
-            var x = document.getElementById('demo');
-            x.addEventListener("click",x.innerHTML="Event handler is added.") ; 
-        </script>
 
-    </body>
+<body>
+    <p id="demo">paragraph</p>
+    <script>
+        var x = document.getElementById('demo');
+        x.onclick = function()  {
+            x.innerHTML = "Event handler is added.";
+        }; 
+    </script>
+
+</body>
+
 </html>
