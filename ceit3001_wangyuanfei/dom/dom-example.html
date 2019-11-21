@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"><b>Original text</b></p>
+
+    <div>
+        <p>Test p text</p>
+    </div>
+
+    <script>
+        function getText(){
+            // var ele = document.getElementById("demo");
+            // console.log(ele);
+            // console.log(ele.innerHTML);
+            // console.log(ele.innerText);
+
+            var text = document.getElementById("demo").innerHTML;
+        }
+
+        function setText(){
+            document.getElementById("demo").innerHTML = "New text";
+        }
+
+        getText();
+        setText();
+    </script>
+</body>
+</html>

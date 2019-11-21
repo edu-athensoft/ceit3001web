@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="intro">
+    </div>
+
+    <p id="p1" class="myspan">p1 text</p>
+    <p id="p2">p2 text</p>
+    <p id="p3">p3 text</p>
+
+    
+    <span class="myspan">aaa</span><br/>
+    <span class="myspan">bbb</span><br/>
+    <span class="myspan">ccc</span><br/>
+
+    <br/>
+    <form name="myform">
+        First Name: <input type="text" name="fname" id="fname" value="Your first name"/><br/>
+        Last Name: <input type="text" name="lname" id="lname" value="Your last name"/><br />
+    </form>
+
+    <button id="showForm">Show Form Inputs Values</button>
+
+    <script>
+        function findElement(){
+            var myElement = document.getElementById("intro");
+        }
+
+        function findElement2() {
+            var eles = document.getElementsByTagName("p");
+            console.log(eles);
+            
+            //add text
+            // console.log(eles[0].innerHTML+" visited");
+
+            //set bold for text in all p tags
+            //using <b>
+            for(x of eles){
+                x.innerHTML = "<b>"+x.innerHTML+"</b>";
+                console.log(x.innerHTML);
+            }
+        }
+
+        function findElement3(){
+            var eles = document.getElementsByClassName("myspan");
+            //set italic for text in all element with class is myspan
+            for(x of eles){
+                x.innerHTML = "<i>"+x.innerHTML+"</i>";
+                console.log(x.innerHTML);
+            }
+        }
+
+        function findElement4(){
+            var eles = document.querySelectorAll("p.myspan");
+
+            for(x of eles){
+                x.innerHTML = x.innerHTML+" by CSS Selector";
+                console.log(x.innerHTML);
+            }
+        }
+
+        function findElementForm(){
+            var eles = document.forms['myform'];
+            console.log(eles);
+
+            console.log(eles[0].value);
+            console.log(eles[1].value);
+            
+            document.getElementById("showForm").addEventListener("click",findElementForm);
+
+            // document.getElementById("showForm").addEventListener("click",function() {
+            //    //todo here
+            // });
+        }
+
+        findElementForm();
+    </script>
+</body>
+</html>
