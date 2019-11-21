@@ -5,8 +5,12 @@
         
         <script>
             
-            document.getElementById("btn").addEventListener("click",myFun); 
-            document.getElementById("btn").addEventListener("click",mySecFun); 
+            var x = document.getElementById("btn");
+            x.addEventListener("click",myFun); 
+            x.addEventListener("click",mySecFun); 
+            x.addEventListener("mouseover",myThirdFun); 
+            x.addEventListener("mouseout",myFourthFun); 
+            
             
             function myFun()  {
                 alert("First event");
@@ -14,6 +18,15 @@
             function mySecFun()  {
                 alert("Second event");
             }
+            function myThirdFun()  {
+                x.innerHTML = "Mouse over";
+                
+            }
+            function myFourthFun()  {
+                x.innerHTML = "Attach many click events to the button";
+                
+            }
+
         
         </script>
     </body>
