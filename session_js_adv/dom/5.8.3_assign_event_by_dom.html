@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Click the button to display date by HTML DOM.</p>
+    <button id="myBtn">Display date</button>
+    <p id="demo"></p>
+        <script>
+            document.getElementById("myBtn").onclick = displayDate();
+            function displayDate() {
+                document.getElementById("demo").innerHTML = Date();
+
+            }
+        </script>
+</body>
+</html>

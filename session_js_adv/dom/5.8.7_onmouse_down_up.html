@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<body>
+    <div id="demo" onmouseup="mouseUp()" onmousedown="mouseDown()" onclick="mouseClick()"
+        style="background: burlywood">Mouse out
+    </div>
+    <script>
+        function mouseUp() {
+            var x = document.getElementById("demo");
+            x.innerHTML = "Mouse up";
+            x.setAttribute("style","background: blue");
+            
+            
+        }
+        function mouseDown() {
+            var x = document.getElementById("demo");
+            x.innerHTML = "Mouse down";
+            x.setAttribute("style","background: green");
+            
+            
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

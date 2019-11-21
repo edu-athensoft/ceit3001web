@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button id="btn">Attach many click events to the button.</button>
+        
+        <script>
+            
+            document.getElementById("btn").addEventListener("click",myFun); 
+            document.getElementById("btn").addEventListener("click",mySecFun); 
+            
+            function myFun()  {
+                alert("First event");
+            }
+            function mySecFun()  {
+                alert("Second event");
+            }
+        
+        </script>
+    </body>
+</html>

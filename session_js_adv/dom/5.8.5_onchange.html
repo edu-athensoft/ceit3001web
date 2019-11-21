@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Enter your name: <input type="text" id="inputName" onchange="upperCase()">
+        <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+        <script>
+            function upperCase()  {
+                var x = document.getElementById("inputName");
+                x.value = x.value.toUpperCase(); // optionObject.value
+                //the value is sent to the server when the form is submitted
+            }
+        </script>
+
+    </body>
+</html>

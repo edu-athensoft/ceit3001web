@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Use addEventListener() method to attach a click event to a button.</p>
+        <button id="btn">Attach the click event by anonymous function</button>
+        <button id="myBtn">Attach the click event by named function</button>
+        <script>
+            document.getElementById("btn").addEventListener("click",function() {alert("Event is attached to the button by anonymous function."); });
+            document.getElementById("myBtn").addEventListener("click",myFun); // myFun not myFun()
+            
+            function myFun()  {
+                alert("Event is attached to the button by named function.");
+            }
+        </script>
+    </body>
+</html>
