@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #div1,
+        #div2 {
+            padding: 20px;
+            background-color: coral;
+
+
+        }
+
+        #p1,
+        #p2 {
+            border: 1px solid;
+            background-color: white;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <h1>Bubbling:</h1>
+        <p id="p1">click me</p>
+
+
+    </div>
+    </br>
+
+    <div id="div2">
+        <h1>Capturing:</h1>
+        <p id="p2">click me</p>
+
+    </div>
+    <script>
+        document.getElementById("div1").addEventListener("click", fundiv, false);
+        document.getElementById("p1").addEventListener("click", funp, false);
+        document.getElementById("div2").addEventListener("click", fundiv, true);
+        document.getElementById("p2").addEventListener("click", funp, true);
+        function fundiv() {
+            alert("You clicked the orange part.");
+        }
+        function funp() {
+            alert("You clicked the white part.");
+        }
+    </script>
+
+</body>
+
+</html>

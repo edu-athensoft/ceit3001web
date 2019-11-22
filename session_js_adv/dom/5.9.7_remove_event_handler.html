@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<body>
+    <div id="myDiv" style="background: burlywood; width: 200px; height: 200px;"><button
+            id="btn" onclick="removeMouseMove()">Click the button to remove onmousemove event.</button>
+    </div>
+    <p id="demo"></p>
+
+
+    <script>
+        document.getElementById("myDiv").addEventListener("mousemove",mouseMove);
+        function mouseMove() {
+            document.getElementById("demo").innerHTML = Math.random();
+        }
+
+        function removeMouseMove() {
+            document.getElementById("myDiv").removeEventListener("mousemove", mouseMove);
+        }
+    </script>
+
+
+</body>
+
+</html>
