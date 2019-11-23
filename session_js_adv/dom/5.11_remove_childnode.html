@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
-        <body>
-                <div id="div1">
-                        <p id="p1">This is a paragraph.</p>
-                        <p id="p2">This is another paragraph.</p>
-                        <p id="p3">This is another paragraph2.</p>
-                </div>
-                        
-                <script>
+
+<body>
+        <div id="div1">
+                <p id="p1">This is the paragraph to be removed.</p>
+                <p id="p2">This is a paragraph.</p>
+                <p id="p3">This is another paragraph.</p>
+        </div>
+        <button id="btn" onclick="myFun()">Click button to remove paragraph.</button>
+
+        <script>
+                function myFun() {
                         var parent = document.getElementById("div1");
                         var child = document.getElementById("p1");
                         parent.removeChild(child);
-                </script>
-                        
-        
-        
-        </body>
+
+                }
+
+        </script>
+
+
+
+</body>
 
 </html>
