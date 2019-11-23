@@ -3,13 +3,31 @@
 
 <body>
     <p id="0">Paragraph</p>
-    <p id="1"></p>
-    <p id="2"></p>
+    <p id="1">Paragraph to be changed by first button.</p>
+    <p id="2">Paragraph to be changed by second button.</p>
+    <p id="3">Paragraph to be changed by third button.</p>
+
+    <button onclick="myFun1()">Changed by innerHTML</button>
+    <button onclick="myFun2()">Changed by childnodes and nodevalue</button>
+    <button onclick="myFun3()">Changed by innerHTML</button>
 
     <script>
-        document.getElementById("1").innerHTML = document.getElementById("0");
-        document.childNodes[1].nodeValue = document.getElementById("0");
-        document.lastChild.nodeValue = document.getElementById("0");
+        
+        function myFun1()  {
+            document.getElementById("1").innerHTML = document.getElementById("0").innerHTML;
+        }
+
+        
+        function myFun2()  {
+            document.getElementById("2").childNodes[0].nodeValue = document.getElementById("0").innerHTML;
+        }
+
+        
+        function myFun3()  {
+            document.getElementById("3").firstChild.nodeValue = document.getElementById("0").innerHTML;
+        }
+
+    
 
     </script>
 
